@@ -12,8 +12,7 @@ const ReachMe = () => {
             </h1>
             <div className="contact-by">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Exercitationem, laborum?
+              contact me
               </p>
               <button className="reachout-btn">Reach Out </button>
             </div>

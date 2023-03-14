@@ -37,8 +37,8 @@ const Footer = () => {
           <div className="footer-info">
             <div className="copywrite">
               <p>
-                © {new Date().getFullYear()} All rights reserved | Made with ❤️
-                by James Waweru
+                ©  All rights reserved | Made with 
+                by UMA AJAY KUMAR REDDY P S
               </p>
             </div>
           </div>

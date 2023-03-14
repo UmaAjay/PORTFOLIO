@@ -12,7 +12,7 @@ class HomeDetails(models.Model):
     job_title = models.CharField(max_length=100, blank=True, null=True)
     par_inro = models.TextField(
         blank=True, null=True, verbose_name="Introduction")
-    avatar_img = models.CharField(max_length=100, blank=True, null=True,
+    avatar_img = models.CharField(max_length=1000, blank=True, null=True,
                                   verbose_name="Google Drive Image Id")
     hireMe_link = models.CharField(max_length=200, blank=True, null=True)
     cv_link = models.URLField(blank=True, null=True)
@@ -28,7 +28,7 @@ class AboutMe(models.Model):
     title = models.CharField(max_length=20, blank=True, null=True)
     title_2 = models.CharField(max_length=100, blank=True, null=True)
     description_one = RichTextField(blank=True, null=True)
-    about_avatar = models.CharField(max_length=100, blank=True, null=True,                    verbose_name="Google Drive Image Id"
+    about_avatar = models.CharField(max_length=10000, blank=True, null=True,verbose_name="Google Drive Image Id"
                                     )
 
     class Meta:
@@ -39,7 +39,7 @@ class AboutMe(models.Model):
 
 
 class ServicesOffred(models.Model):
-    icon_image = models.CharField(max_length=100, blank=True, null=True,
+    icon_image = models.CharField(max_length=1000, blank=True, null=True,
                                   verbose_name="Google Drive Image Id")
     service_name = models.CharField(max_length=40, blank=True, null=True)
     shadow_icon = models.CharField(max_length=40, blank=True, null=True)
@@ -61,7 +61,7 @@ class LanguagesIcons(models.Model):
         ("Experienced", "Experienced"),
     )
 
-    icon = models.CharField(max_length=100, blank=True,
+    icon = models.CharField(max_length=1000, blank=True,
                             verbose_name="language Icon Image:(icons8.com)")
     lang_name = models.CharField(
         max_length=100, blank=True, verbose_name="Language Name")
@@ -76,8 +76,8 @@ class LanguagesIcons(models.Model):
 
 
 class Project(models.Model):
-    language_used = models.CharField(max_length=100, blank=True, null=True)
-    about_avatar = models.CharField(max_length=100, blank=True, null=True,
+    language_used = models.CharField(max_length=1000, blank=True, null=True)
+    about_avatar = models.CharField(max_length=1000, blank=True, null=True,
                                     verbose_name="Google Drive Image Id")
     updated_on = models.DateTimeField(
         auto_now_add=False, null=True, auto_now=True, blank=True)
@@ -97,7 +97,7 @@ class MyContact(models.Model):
     icon = models.CharField(max_length=90, blank=True,
                             null=True, verbose_name="Icon (eg: fa -fa-twitter)")
     contact_info = models.CharField(
-        max_length=100, blank=True, null=True, verbose_name="Contact Info (eg: johndoe2@gmail.com)")
+        max_length=100, blank=True, null=True, verbose_name="Contact Info (eg: umaveena.alvas@gmail.com)")
     contact_name = models.CharField(
         max_length=30, blank=True, null=True, verbose_name="Contact Name (eg: twitter)")
 
